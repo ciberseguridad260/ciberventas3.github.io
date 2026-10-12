@@ -1,0 +1,153 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    color: #333;
+}
+
+/* Cabecera */
+.main-header {
+    background-color: #1a252f; /* Tono verde exacto de la captura */
+    padding: 12px 0;
+    border-bottom: 1px solid #354757;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Bloque Marca Izquierda */
+.brand {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #111111;
+    line-height: 1.1;
+}
+
+.brand-sub {
+    font-size: 12px;
+    color: #444444;
+    padding-left: 2px;
+}
+
+/* Contacto y utilidades Derecha */
+.top-info {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.phone {
+    font-size: 13px;
+    color: #ffffff;
+}
+
+.phone-number {
+    color: #d32f2f; /* Destaca el color del nÃƒÅ¡mero de telÃƒÄfono en rojo sutil */
+}
+
+.utility-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Botones Redondeados de la captura */
+.btn-utility {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid #ffffff;
+    padding: 8px 18px;
+    border-radius: 12px; /* Redondeado idÃƒÄntico */
+    font-size: 13px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-utility:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* CategorÃ­as (Antes era una tabla) */
+.categories-nav {
+    display: flex;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.category-item {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    border-right: 1px solid #ccc;
+}
+
+.category-item:last-child {
+    border-right: none;
+}
+
+/* DistribuciÃ³n de Pantalla (Sidebar + CatÃ¡logo) */
+.content-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+/* Barra Lateral */
+.sidebar {
+    width: 20%;
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+.sidebar ul {
+    padding-left: 20px;
+}
+
+/* Grilla de Productos (Reemplaza las tablas anidadas) */
+.products-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+/* Tarjeta de Producto Individual */
+.product-card {
+    border: 1px solid #eee;
+    padding: 15px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.product-card h4 {
+    margin: 10px 0;
+    min-height: 40px; /* Alinea los tÃ­tulos largos */
+}
+
+.price {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Botones bÃ¡sicos */
+button {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.btn-primary { background: #007bff; color: white; border: none; }
+.btn-secondary { background: #e2e8f0; border: 1px solid #cbd5e1; }
+.btn-buy { background: #28a745; color: white; border: none; width: 100%; }
